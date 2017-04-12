@@ -13,7 +13,13 @@ var cookieList = {
     'Mo',
     'Curly',
   ],
-  address: '5116 Kenilworth PL NE, Seattle, WA',
+  locations: [
+    'University Village',
+    'Northgate',
+    'Pacific Science Center',
+    'Pike Place Market',
+    'International District',
+  ],
   businessHours: '9:00 AM - 5:30 PM',
 };
 
@@ -43,11 +49,18 @@ for (var i = 0; i < cookieList.employeeList.length; i++) {
   stooges.appendChild(ingredientLi);
 }
 
-var locationStore = document.getElementById('address');
-ingredientLi = document.createElement('li');
-ingredientLi.textContent = cookieList.address;
+var locationStore = document.getElementById('locations');
+  ingredientLi = document.createElement('li');
+  ingredientLi.textContent = cookieList.locations;
 
-locationStore.appendChild(ingredientLi);
+
+for (var i = 0; i < cookieList.locations.length; i++) {
+  console.log('cookieList.locations', cookieList.locations);
+  ingredientLi = document.createElement('li');
+
+  ingredientLi.textContent = cookieList.locations[i];
+  locationStore.appendChild(ingredientLi);
+}
 
 
 var storeHours = document.getElementById('businessHours');
