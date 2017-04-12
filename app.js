@@ -1,5 +1,5 @@
 'use strict';
-
+//Need to make code for 10 stores
 var cookieList = {
   title: 'Cookie Stand',
   types: [
@@ -35,13 +35,14 @@ for (var i = 0; i < cookieList.types.length; i++) {
 
 var stooges = document.getElementById('employeeList');
 
-  for (var i = 0; i < cookieList.employeeList.length; i++) {
-    console.log('cookieList.employeeList', cookieList.employeeList);
-    ingredientLi = document.createElement('li');
+for (var i = 0; i < cookieList.employeeList.length; i++) {
+  console.log('cookieList.employeeList', cookieList.employeeList);
+  ingredientLi = document.createElement('li');
 
-    ingredientLi.textContent = cookieList.employeeList[i];
-    stooges.appendChild(ingredientLi);
-  }
+  ingredientLi.textContent = cookieList.employeeList[i];
+  stooges.appendChild(ingredientLi);
+}
+
 var locationStore = document.getElementById('address');
 ingredientLi = document.createElement('li');
 ingredientLi.textContent = cookieList.address;
@@ -54,3 +55,6 @@ ingredientLi = document.createElement('li');
 ingredientLi.textContent = cookieList.businessHours;
 
 storeHours.appendChild(ingredientLi);
+
+
+//set code to make a function to determine when a store is open and when it is closed
