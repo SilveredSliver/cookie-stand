@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: salmon;
-}
+}/*a reset so that the webpage will look the same on all platforms/web browsers*/
 
 
 html, body {
@@ -15,4 +15,9 @@ html, body {
 
 h1 {
   background-color: red;
+  float:left;
+}
+
+table, table * {
+  border: 1px solid black;
 }
